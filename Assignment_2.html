@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><strong>Purchase Form</strong></title>
+
+<style>
+body{
+    background-color: whitesmoke;
+    font-family: Arial;
+}
+
+form{
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: lavenderblush;
+}
+
+h2{
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+}
+
+input, select{
+    width: 100%;
+    padding: 3px;
+    margin-top: 5px;
+    
+    
+}
+
+button{
+    margin-top: 15px;
+    margin-left: 200px;
+    padding: 10px;
+    width: 100px;
+    background-color: darkgray;
+    border-radius: 20px;
+    
+}
+
+button:hover{
+    background-color: cornflowerblue;
+}
+
+.main{
+    margin-left: 162px;
+    padding: 20px;
+    height: 80%;
+    width: 1500px;
+}
+
+.div1{
+   margin-left: 400px;
+   margin-right: 400px;
+   margin-top: 20px;
+   height: 40px;
+   background-color: rgb(137, 163, 137);
+   border-radius: 50%;
+}
+</style>
+
+</head>
+
+<body>
+    
+<div class="div1">
+<h2><strong>Items Purchasing Form</strong></h2>
+</div>
+
+<div class="main">
+<form style="width: 35%;">
+
+<label>Customer Name</label>
+<input type="text" placeholder="Enter your name">
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email">
+
+<label for="laptop">Laptop ($800)</label>
+<input type="number" id="laptop" placeholder="Enter quantity">
+
+<label for="headphones">Headphones ($50)</label>
+<input type="number" id="headphones" placeholder="Enter quantity">
+
+<label for="Smartphone">Smartphone ($700)</label>
+<input type="number" id="Smartphone" placeholder="Enter quantity">
+
+<label for="Refrigeretator">Refrigeretator ($350)</label>
+<input type="number" id="Refrigeretator" placeholder="Enter quantity">
+
+<label for="air Conditioner">Air Conditioner ($500)</label>
+<input type="number" id="air Conditioner" placeholder="Enter quantity">
+
+<label>Price ($)</label>
+<input type="text">
+
+<label>Quantity</label>
+<input type="number">
+
+
+<label>Total Price</label>
+<input type="text" id="totalPrice" readonly>
+
+
+<button type="submit">Purchase</button>
+
+</form>
+</div>
+
+</body>
+</html>
