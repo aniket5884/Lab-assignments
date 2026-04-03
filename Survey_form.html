@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+        background-image: url(https://www.thezoombackgrounds.com/cdn/shop/files/funny_zoom_backgrounds_nature_12_a470a3b8-1463-4ad4-9039-ea1da4dee730.jpg?v=1737388631&width=1024);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;    
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 15px;
+      color: black;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+   /*.form-container:hover{
+        background-color: gainsboro;
+        transition: 5s;
+        box-shadow: 25px 25px 25px rgb(18, 16, 16);
+    }*/
+
+    
+  </style>
+</head>
+
+<body>
+
+<div class="form-container">
+  <h2 class="text-center mb-4">Survey Form</h2>
+
+  <form>
+
+    
+    <div class="mb-3">
+      <label class="form-label">Name</label>
+      <input type="text" class="form-control" placeholder="Enter your name" required>
+    </div>
+
+    
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input type="email" class="form-control" placeholder="Enter your email" required>
+    </div>
+
+    
+    <div class="mb-3">
+      <label class="form-label">Age</label>
+      <input type="number" class="form-control" placeholder="Enter your age">
+    </div>
+
+    
+    <div class="mb-3">
+      <label class="form-label">Would you recommend this survey form to a friend?</label>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="recommend">
+        <label class="form-check-label">Yes</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="recommend">
+        <label class="form-check-label">No</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="recommend">
+        <label class="form-check-label">Maybe</label>
+      </div>
+    </div>
+
+    
+    <div class="mb-3">
+      <label class="form-label">Languages and Frameworks Known</label>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label">HTML</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label">CSS</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label">JavaScript</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label">Bootstrap</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label">React</label>
+      </div>
+
+    </div>
+
+
+    <button type="submit" class="btn btn-primary w-100">Submit</button>
+
+  </form>
+</div>
+
+</body>
+</html>
