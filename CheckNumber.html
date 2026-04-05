@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url(https://www.shutterstock.com/image-photo/best-4k-hd-nature-wallpaper-600nw-2260337803.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow : hidden;
+
+
+    }
+
+    .header{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(111, 127, 177);
+        color: black;
+        width: 100%;
+        height: 60px;
+    }
+
+    h1{
+        margin: 0;
+        padding: 10px;
+        color: darkblue;
+        cursor: pointer;
+
+    }
+
+    .main{
+        margin: 0;
+        padding: 160px;
+        text-align: center;
+        
+    }
+
+    label{
+        font-size: 85px;
+        font-weight: bold;
+        
+     }
+
+     input{
+        width: 350px;
+        height: 35px;
+        border-radius: 9px;
+        padding-left: 12px;
+        font-size: 20px;
+     }
+
+    button{
+        width: 140px;
+        padding: 10px;
+        color: rgb(200, 23, 23);
+        background-color: rgb(30, 55, 5);
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    button:hover{
+        
+         background-color: rgb(228, 205, 115);
+         
+    }
+
+    
+</style>
+
+<script>
+    const checkNumber = () => {
+    let num = document.getElementById("num").value;
+
+        if(num > 0){
+            alert("The number is positive");
+        }
+
+        else if(num < 0){
+            alert("The number is negative");
+
+        }
+
+         else if(num = " "){
+            alert("No number is entered");
+
+        }
+
+        else{
+            alert("The number is Zero");
+        }
+    }
+
+    
+
+</script>
+
+<body>
+    <div class="header">
+    <h1 align="center">Check Number Is Positive, Negative Or Zero</h1>
+    </div>
+    <div class="main">
+        
+        
+    <label>Enter a Number  </label><br><br>
+    <input type="number" id="num">
+
+    <br><br>
+
+    <button onclick="checkNumber()">Check Number</button>
+    </div>
+</body>
+</html>
